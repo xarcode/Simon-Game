@@ -31,6 +31,13 @@ $(document).keypress(function (e) {
   }
 });
 
+document.addEventListener("ontouchend", function (e) {
+  if (!gameState) {
+    gameState = true;
+    nextSequence();
+  }
+});
+
 function checkAnswer(currentColor, currentStep) {
   if (gamePattern[currentStep] != currentColor) {
     resetGame();

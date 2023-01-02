@@ -51,3 +51,30 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+@media screen and (min-width: 300px) {
+  #level-title{
+    visibility: hidden;
+    position: relative;
+  }
+  #level-title::after{
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    content: "Touch Screen To Start";
+  }
+
+  .btn{
+    /* max-width: 10%;
+    max-height: 10%; */
+    height: 150px;
+    width: 150px;
+  }
+
+  .container{
+    /* margin-top: 10px; */
+    width: 100%;
+  }
+}
