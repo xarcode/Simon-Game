@@ -3,7 +3,11 @@ body {
   background-color: #011F3F;
 }
 
-#level-title {
+.small{
+  display: none;
+}
+
+.level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
@@ -53,28 +57,27 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  #level-title{
-    visibility: hidden;
-    position: relative;
-  }
-  #level-title::after{
-    visibility: visible;
-    position: absolute;
-    top: 0;
-    left: 0;
+  .level-title{
     font-size: 2rem;
-    content: "Touch Screen To Start";
+  }
+
+  .large{
+    display: none;
+  }
+
+  .small{
+    display: block;
   }
 
   .btn{
     /* max-width: 10%;
     max-height: 10%; */
-    height: 140px;
-    width: 140px;
+    height: 100px;
+    width: 100px;
   }
 
   .container{
-    /* margin-top: 10px; */
+    margin-top: 100px;
     width: 100%;
   }
 }

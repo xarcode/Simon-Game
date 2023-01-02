@@ -31,7 +31,7 @@ $(document).keypress(function (e) {
   }
 });
 
-document.addEventListener("ontouchend", function (e) {
+document.addEventListener("touchend", function (e) {
   if (!gameState) {
     gameState = true;
     nextSequence();
@@ -52,7 +52,7 @@ function resetGame() {
 
   setTimeout(() => {}, 100);
 
-  $("#level-title").html("Press A Key to Start");
+  $(".level-title").html("Press A Key to Start");
   userClickCount = 0;
   level = 0;
   gamePattern = [];
@@ -81,5 +81,5 @@ function nextSequence() {
     .fadeIn(100);
   playSound(randomChosenColor);
   level += 1;
-  $("#level-title").html("Level " + level);
+  $(".level-title").html("Level " + level);
 }
