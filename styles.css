@@ -52,7 +52,7 @@ body {
   background-color: grey;
 }
 
-@media screen and (min-width: 300px) {
+@media only screen and (max-width: 600px) {
   #level-title{
     visibility: hidden;
     position: relative;
@@ -69,8 +69,8 @@ body {
   .btn{
     /* max-width: 10%;
     max-height: 10%; */
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: 140px;
   }
 
   .container{
